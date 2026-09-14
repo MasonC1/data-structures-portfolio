@@ -11,6 +11,6 @@ Ultimately, I want to establish a long-term career in the sports industry and be
 ---
 ## Portfolio
 - [Blog](blog.md)
-- [Projects](projects.md)
+- [Projects](project.md)
 - [Resume](resume.md)
 - [LinkedIn](www.linkedin.com/in/mason-cook-855b93227)
