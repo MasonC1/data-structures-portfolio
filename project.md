@@ -27,7 +27,7 @@ The career-average method produced was the lowest MAE and was therefore selected
 
 Forecast
 Using the selected approach, Love's projected 2026 stats are:  
-![Jordan Love Forecast](jloveForecast.png). 
+![Jordan Love Forecast](jloveForecast.png)  
 These forecasts reflect his historical performance rather than assuming that his most recent season will continue unchanged.
 
 Visual 1: Jordan Love QBR
