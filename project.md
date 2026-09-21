@@ -16,31 +16,31 @@ ANY/A was calculated using a formula which included passing yards, touchdowns, i
 ANY/A = (Passing Yards + 20(TD) - 45(INT) + Sack Yards) / (Attempts + Sacks)  
 Some further work we did to the data was merging the datasets in which the final table would contain one observation per season. This table originally was missing a value for the QBR in 2021 so we dropped that season and on included 2022-2025. This prevented an estimated QBR value from being added to the model but also reduced the already small sample size available for forecasting.
 
-Historical Results
+Historical Results  
 ![Jordan Love Performance Trends](jlovePerformanceTrends.png)
 The largest improvement we see from Love is from 2024 to 2025. Everything increases except ANY/A. EPA/play and Pass EPA/play both doubled. This helps show that when analyzing a quarterbacks performance you need to look at multiple stats to paint the whole picture because looking at only one stat can show bias and leave out most of the story.
 
-Forecasting Method
+Forecasting Method  
 We used three forecasting approaches: Career Average, Recent Two-Year Average, and Linear Trend. The models were tested using 2024 and 2025 as historical test seasons. Mean Absolute Error (MAE) was used to compare the approaches.  
 ![MAE Model](modelMAE.png)  
 The career-average method produced was the lowest MAE and was therefore selected as the best-performing forecasting method. Again since the the sample size is small we must look at this as an estimate rather than a precise prediction
 
-Forecast
+Forecast  
 Using the selected approach, Love's projected 2026 stats are:  
 ![Jordan Love Forecast](jloveForecast.png)  
 These forecasts reflect his historical performance rather than assuming that his most recent season will continue unchanged.
 
-Visual 1: Jordan Love QBR
+Visual 1: Jordan Love QBR  
 ![Jordan Love QBR](Jordan_LoveQBR.png)
 
-Visual 2: Jordan Love ANY/A
+Visual 2: Jordan Love ANY/A  
 ![Jordan Love ANY/A](Jordan_LoveAnyA.png)
 
-Conclusion
+Conclusion  
 Using NFL play-by-play data from 2018–2025 and Jordan Love's historical performance from 2021–2025, the analysis examined EPA/play, Pass EPA/play, QBR, and ANY/A. Three forecasting approaches were compared using historical test seasons, and the career-average approach produced the lowest MAE.  
 The resulting 2026 projections are 0.166 EPA/play, 0.168 Pass EPA/play, a 71.1 QBR, and a 7.71 ANY/A.  
 The results point toward a relatively stable 2026 season for Love, with performance close to his recent level and some improvement in ANY/A. However, these should be interpreted as statistical estimates rather than guarantees. The small number of season-level observations, missing 2021 QBR, and lack of variables describing injuries, teammates, coaching, and defensive strength limit the model's ability to capture all of the factors that influence quarterback performance.  
 Future research could improve the analysis by incorporating additional seasons as they become available, more quarterback performance measures, opponent strength, team context, injury information, and more advanced forecasting models. A larger dataset would also make it possible to evaluate whether more complex models consistently outperform the simple career-average approach.
 
-Sources Included Here:
+Sources Included Here:  
 [Project 1](personalPortfolioProject1.html)
