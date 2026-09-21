@@ -22,12 +22,12 @@ The largest improvement we see from Love is from 2024 to 2025. Everything increa
 
 Forecasting Method
 We used three forecasting approaches: Career Average, Recent Two-Year Average, and Linear Trend. The models were tested using 2024 and 2025 as historical test seasons. Mean Absolute Error (MAE) was used to compare the approaches.
-Image
+![MAE Model](modelMAE.png)
 The career-average method produced was the lowest MAE and was therefore selected as the best-performing forecasting method. Again since the the sample size is small we must look at this as an estimate rather than a precise prediction
 
 Forecast
 Using the selected approach, Love's projected 2026 stats are:
-Image
+![Jordan Love Forecast](jloveForecast.png)
 These forecasts reflect his historical performance rather than assuming that his most recent season will continue unchanged.
 
 Visual 1: Jordan Love QBR
