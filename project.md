@@ -136,5 +136,3 @@ Example Predictions
 The final testing dataset was also examined at the individual game level.  
 ![nflGameExamples](nflGameExamples.png)  
 Looking at individual predictions helps demonstrate where the models succeeded and where they struggled. NFL games can be difficult to predict because the outcome can be influenced by factors that are not included in the model, such as injuries, weather, coaching decisions, turnovers, and unexpected player performance.  
-
-Conclusion  
