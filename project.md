@@ -111,11 +111,11 @@ Random Forest produced the highest precision at 61.9%. This means that when Rand
 Overall, Logistic Regression was selected as the best-performing model because it had the highest accuracy and F1 score. Both machine-learning models also improved upon the 53.5% baseline in terms of accuracy.
 
 Confusion Matrices  
-Logistic Regression Confusion Matrix
-![LogRegressionConfusion](nflLogRegressionConfusion.png)  
+Logistic Regression Confusion Matrix  
+![LogRegressionConfusion](nflLogRegressionConfusionMatrix.png)  
 The Logistic Regression confusion matrix shows that the model correctly predicted 52 home-team losses and 100 home-team wins. It incorrectly predicted 67 losses as wins and 37 wins as losses.  
 This shows that Logistic Regression was more successful at identifying home-team wins than home-team losses.  
-Random Forest Confusion Matrix
+Random Forest Confusion Matrix. 
 ![RandomForestConfusion](nflRandomForestConfusionMatrix.png)  
 The Random Forest model correctly predicted 68 home-team losses and 83 home-team wins. It incorrectly predicted 51 losses as wins and 54 wins as losses.  
 Compared with Logistic Regression, Random Forest was better at identifying home-team losses but identified fewer home-team wins.  
@@ -124,7 +124,7 @@ The confusion matrices help explain why Logistic Regression had a higher recall 
 Model Interpretation  
 Feature importance was examined for the Random Forest model to determine which variables were most useful for predicting game outcomes.  
 Random Forest Feature Importance  
-![RandomForestImportance](nflRandomForestImportance.png)  
+![RandomForestImportance](nflRandomForestFeatureImportance.png)  
 The feature importance results showed that points_for_diff was the most important variable, followed by point_diff_difference.  
 The Logistic Regression coefficients were also examined to understand the direction of the relationships.  
 Logistic Regression Coefficients  
