@@ -73,7 +73,7 @@ Difference in win percentage.
 These variables were selected because they provide information about both teams while keeping the model relatively simple and interpretable.  
 
 Historical Results  
-![Game Outcome Distribution](nflgameDistribution.png) 
+![Game Outcome Distribution](nflgameDistribution.png)  
 The distribution of home wins and losses was examined before developing the models. This was important because a classification model can appear to perform well if one outcome is much more common than the other.  
 The analysis also examined the relationships between the selected features and the home-team outcome. The correlation analysis helped identify which variables appeared to have the strongest relationship with winning while also showing how closely related some of the predictors were to each other.  
 One important pattern was that teams with stronger previous point differentials and higher previous win percentages generally entered games with a greater likelihood of winning.  
@@ -129,8 +129,7 @@ The feature importance results showed that points_for_diff was the most importan
 The Logistic Regression coefficients were also examined to understand the direction of the relationships.  
 Logistic Regression Coefficients  
 ![LogRegressionImportance](FeatureImportance.png)  
-A positive coefficient indicates that an increase in the feature was associated with a greater probability of the home team winning, while a negative coefficient indicates the opposite relationship.  
-For example, if win percentage difference has a positive coefficient, this means that teams entering the game with a higher previous win percentage than their opponent were more likely to be predicted as the winner.  
+A positive coefficient indicates that an increase in the feature was associated with a greater probability of the home team winning, while a negative coefficient indicates the opposite relationship.   
 
 Example Predictions  
 The final testing dataset was also examined at the individual game level.  
