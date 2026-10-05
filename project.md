@@ -73,7 +73,7 @@ Difference in win percentage.
 These variables were selected because they provide information about both teams while keeping the model relatively simple and interpretable.  
 
 Historical Results  
-![Game Outcome Distribution]() 
+![Game Outcome Distribution](nflgameDistribution.png) 
 The distribution of home wins and losses was examined before developing the models. This was important because a classification model can appear to perform well if one outcome is much more common than the other.  
 The analysis also examined the relationships between the selected features and the home-team outcome. The correlation analysis helped identify which variables appeared to have the strongest relationship with winning while also showing how closely related some of the predictors were to each other.  
 One important pattern was that teams with stronger previous point differentials and higher previous win percentages generally entered games with a greater likelihood of winning.  
@@ -105,20 +105,36 @@ Precision measures how often the model was correct when it predicted that the ho
 Recall measures how many of the actual home-team wins the model was able to correctly identify.  
 The F1-score combines precision and recall into one measurement and is useful for comparing the overall classification performance of the models.  
 The results were:
-![Model Evaluation]()  
+![Model Evaluation](ModelStats.png)  
 Logistic Regression produced the highest accuracy at 59.4%, slightly outperforming Random Forest at 59.0%. Logistic Regression also had the highest recall and F1 score among the two machine-learning models.  
 Random Forest produced the highest precision at 61.9%. This means that when Random Forest predicted that the home team would win, it was correct more often than Logistic Regression.  
 Overall, Logistic Regression was selected as the best-performing model because it had the highest accuracy and F1 score. Both machine-learning models also improved upon the 53.5% baseline in terms of accuracy.
 
+Confusion Matrices  
+Logistic Regression Confusion Matrix
+![LogRegressionConfusion](nflLogRegressionConfusion.png)  
+The Logistic Regression confusion matrix shows that the model correctly predicted 52 home-team losses and 100 home-team wins. It incorrectly predicted 67 losses as wins and 37 wins as losses.  
+This shows that Logistic Regression was more successful at identifying home-team wins than home-team losses.  
+Random Forest Confusion Matrix
+![RandomForestConfusion](nflRandomForestConfusionMatrix.png)  
+The Random Forest model correctly predicted 68 home-team losses and 83 home-team wins. It incorrectly predicted 51 losses as wins and 54 wins as losses.  
+Compared with Logistic Regression, Random Forest was better at identifying home-team losses but identified fewer home-team wins.  
+The confusion matrices help explain why Logistic Regression had a higher recall while Random Forest had a higher precision.  
+
 Model Interpretation  
 Feature importance was examined for the Random Forest model to determine which variables were most useful for predicting game outcomes.  
 Random Forest Feature Importance  
-The feature importance results showed that [INSERT MOST IMPORTANT FEATURE] was the most important variable, followed by [INSERT SECOND FEATURE].  
+![RandomForestImportance](nflRandomForestImportance.png)  
+The feature importance results showed that points_for_diff was the most important variable, followed by point_diff_difference.  
 The Logistic Regression coefficients were also examined to understand the direction of the relationships.  
 Logistic Regression Coefficients  
+![LogRegressionImportance](FeatureImportance.png)  
 A positive coefficient indicates that an increase in the feature was associated with a greater probability of the home team winning, while a negative coefficient indicates the opposite relationship.  
 For example, if win percentage difference has a positive coefficient, this means that teams entering the game with a higher previous win percentage than their opponent were more likely to be predicted as the winner.  
+
 Example Predictions  
-The final testing dataset was also examined at the individual game level.
+The final testing dataset was also examined at the individual game level.  
+![nflGameExamples](nflGameExamples.png)  
+Looking at individual predictions helps demonstrate where the models succeeded and where they struggled. NFL games can be difficult to predict because the outcome can be influenced by factors that are not included in the model, such as injuries, weather, coaching decisions, turnovers, and unexpected player performance.  
 
 Conclusion  
