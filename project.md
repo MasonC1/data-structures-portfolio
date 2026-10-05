@@ -45,7 +45,7 @@ Future research could improve the analysis by incorporating additional seasons a
 Sources Included Here:  
 [Project 1](personalPortfolioProject1.html)
 
-## Project 1
+## Project 2
 Research Question
 How accurately can NFL game outcomes be predicted using team performance statistics available before the game?
 
